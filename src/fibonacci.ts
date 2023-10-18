@@ -31,7 +31,7 @@ export const computeFibonacciNumber = (position: number): number => {
 export const computeFibonacciArray = (start: number, endInclusive: number): number[] => {
     const inputArray = [...Array(endInclusive - start + 1).keys()].map(i => i + start);
     return inputArray.map(x => computeFibonacciNumber(x));
-
+}
 
 const computeNegativeFibonacci = (position: number): number => {
     if (position >= 0) {
